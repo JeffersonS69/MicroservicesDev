@@ -18,7 +18,7 @@ spec:
                 app: microservice-libreria
                 type: microservice
         spec:
-            container:
+            containers:
             - name: microservice-libreria-app
               image: jeffgar49/serviciosapilibreria:latest
               ports: 

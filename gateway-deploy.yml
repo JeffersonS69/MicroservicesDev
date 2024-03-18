@@ -18,7 +18,7 @@ spec:
                 app: gateway
                 type: microservice
         spec:
-            container:
+            containers:
                 - name: gateway-app
                   image: jeffgar49/serviciosapigateway:latest
                   ports: 

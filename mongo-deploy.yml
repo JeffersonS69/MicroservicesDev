@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
     name: mongo-deploy
-    labals:
+    labels:
         name: mongo-deploy
         app: microservice-libreria
 spec:
@@ -18,7 +18,7 @@ spec:
                 app: microservice-libreria
                 name: mongo-pod
         spec:
-            container:
+            containers:
                 - name: mongo
                   image: mongo:latest
                   command:
@@ -28,6 +28,6 @@ spec:
                   - name: MONGO_INITDB_ROOT_USERNAME
                     value: "jeffgar"
                   - name: MONGO_INITDB_ROOT_PASSWORD
-                    value: "$jeff123"
+                    value: "jeff123"
                   ports: 
                     - containerPort: 27017 
